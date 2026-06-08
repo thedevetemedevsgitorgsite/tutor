@@ -484,6 +484,9 @@ document.querySelectorAll('.chip').forEach(chip=>{
   });
 });
 
+// Added 
+btn.addEventListener('click', send); 
+
 async function send(){
   const text=inp.value.trim();
   if(!text)return;
