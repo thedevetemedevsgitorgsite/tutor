@@ -3,6 +3,35 @@
 // Env var needed: GEMINI_API_KEY
 
 const FAQ = `
+=== DEVTEMPLE PLATFORM KNOWLEDGE BASE ===
+
+ABOUT DEVTEMPLE
+DevTemple (devtem.org) is the ultimate marketplace for premium digital assets, developer tools, creative resources, and marketing kits. It is a dual-sided platform — creators sell digital products and earn, while buyers get instant downloads of vetted resources.
+- 2,000+ products, 500+ creators
+- Buyers get instant digital downloads after purchase
+- Sellers earn up to 85% royalties (after 30% service fee)
+- Referral program: earn 7% commission (10% for Pro members) on every referred sale — no caps, lifetime rewards
+- Free developer utilities: Image Compressor, Image Format Converter, Color Picker (devtem.org)
+- Social: Facebook, X (@DevtempT12979), GitHub (fscss-ttr), YouTube (@devtem_org)
+
+KEY PAGES & LINKS
+- Marketplace / Browse: devtem.org/home
+- Sign up / Login: devtem.org/signup
+- Dashboard: devtem.org/dashboard
+- Upload a product: devtem.org/dashboard#/pen/
+- Rewards & Referrals: devtem.org/dashboard#/reward/
+- Settings: devtem.org/dashboard#/settings/
+- Get Started guide: devtem.org/get-started
+- FAQ: devtem.org/faq
+- Contact: devtem.org/contact (support form + office@devtem.org)
+- Terms: devtem.org/terms
+- Privacy Policy: devtem.org/terms/privacy
+- Refund Policy: devtem.org/terms#payment-refunds-heading
+- About: devtem.org/about
+- Blog: devtem.org/blog
+- Image Compressor: devtem.org/image-compressor
+- Color Picker: devtem.org/color-picker
+
 === DEVTEMPLE FAQ ===
 
 GENERAL
@@ -169,8 +198,65 @@ Q: How much does Premium Pro cost?
 A: Yearly plan: ₦46,920/year (saves ₦8,280 vs monthly — 15% off). Monthly plan: ₦4,600/month (coming soon). The yearly plan is recommended.
 
 ---
-CONTACT
-General Inquiries: office@devtem.org
+ACCOUNT DEACTIVATION
+Q: Why was my account deactivated?
+A: If your account has been deactivated, you'll temporarily lose access to your dashboard, payouts, listings, reviews, and referral benefits. Frequent causes include:
+- Invalid, misleading, or trademarked/copyrighted username or display name
+- Excessive violations reported by users or flagged by moderation
+- Content that violates guidelines (offensive, misleading, or prohibited)
+- Manipulation of pricing, rates, or platform benefits
+- Unrelated or spam link in the portfolio URL field
+- AI-generated content submitted without the required AI label disclosure
+- Multiple violations of asset submission guidelines
+- Unresolved licensing or copyright disputes regarding hosted tools
+- Irregular or suspicious activity during payout processing
+
+Q: My account was deactivated — what should I do next?
+A: What happens if unresolved: pending payouts will be frozen, listed assets will be unpublished, repeated violations may result in a permanent ban, and accounts inactive in appeal for 30+ days may be permanently closed.
+What you should do: Review the Terms of Service at devtem.org/terms to pinpoint potential violations. Gather your developer profile details including your dynamic Account ID shown on the deactivation notice. Submit a formal review request to the DevTemple administration team at office@devtem.org.
+
+---
+TERMS & POLICIES SUMMARY
+Q: What are DevTemple's Terms and Conditions?
+A: DevTemple's Terms (effective 1 Jan 2026, devtem.org/terms) cover: General Terms (accurate account creation, NDPR/GDPR/CCPA compliance), User Agreement, Account Responsibilities, Content Requirements (no malicious code, real identity, accurate descriptions, no external links in content), Payment Terms (via Paystack, final sales, disputes within 30 days), Content Licensing, Cookies & Tracking, Dispute Resolution (governed by Nigerian law, arbitration in Lagos), and Community Guidelines.
+
+Q: What is DevTemple's Privacy Policy?
+A: DevTemple's Privacy Policy (effective 18 Sep 2025, devtem.org/terms/privacy) explains: data collected (name, email, country, payment history via Paystack, usage/cookie data), how it's used (platform functionality, transactions, analytics, communication), data sharing (not sold; Paystack handles payments under confidentiality), cookies (essential, analytics, functional), and your GDPR/CCPA rights (access, rectification, deletion, portability, opt-out). Data Protection Officer email: safety@devtem.org.
+
+Q: What is DevTemple's refund policy?
+A: All sales are final. Refunds are only considered if purchased content is technically inaccessible. See devtem.org/terms#payment-refunds-heading for full details.
+
+Q: What file requirements exist for uploads?
+A: ZIP files must contain only relevant product files — no personal photos, sensitive info, malicious code, viruses, backdoors, unrelated assets, or stock images unless they are part of the product. Profile must use real identity — no fake names, impersonation, or misleading info. Descriptions must be clear with no clickbait language or external links. Showcase images must accurately represent the actual product.
+
+Q: What are DevTemple's Community Guidelines?
+A: Treat others with respect. No harassment, hate speech, or discrimination. Upload only original or licensed work. Be honest about what you're offering. No review rigging or fake accounts. One account per creator/team. No unapproved ads or spam. Respect intellectual property. No payment scams or refund abuse. Violations lead to warnings, content removal, suspension, or permanent bans.
+
+---
+CONTACT & SUPPORT
+Q: How do I contact DevTemple support?
+A: Via the contact form at devtem.org/contact — select a topic (purchase issue, technical support, report content, account help, refund request, creator support, or other). Or email directly: office@devtem.org. Support typically responds within 24 hours.
+
+Q: What social media is DevTemple on?
+A: Facebook: facebook.com/profile.php?id=61582984827911 | X/Twitter: @DevtempT12979 | GitHub: github.com/fscss-ttr | YouTube: @devtem_org
+
+---
+FREE TOOLS
+Q: Does DevTemple offer free tools?
+A: Yes — free browser-based developer utilities at devtem.org: Image Format Converter (JPG/PNG/WEBP), Image Compressor (reduce file size without quality loss), and Color Picker & Extractor (hex, RGB, palette extraction from images).
+
+---
+GET STARTED GUIDE
+Q: How does buying work?
+A: Browse at devtem.org/home. Add to cart and checkout securely via Paystack — instant digital download. Subscribe to creators to get notified when they upload new products. All products are reviewed before listing.
+
+Q: How does selling work?
+A: Go to Dashboard → Upload (devtem.org/dashboard#/pen/). Set price, add cover image, description, and tags. Product goes live immediately. Earn verification badges as you grow (Blue → Gold). Build subscribers — they get email notifications every time you upload.
+
+Q: How do the rewards and badges work?
+A: Share your referral link and earn 7% on every order placed through it (10% for Pro members). Complete your profile to get your Blue Verified Badge. Stay active — sell, post, engage — to unlock the Gold Verified Badge. Badges increase search visibility and buyer trust. No cap on referral earnings.
+
+---
 Data Protection: safety@devtem.org
 Website: https://devtem.org
 Last updated: 20 May 2026
@@ -440,3 +526,4 @@ function rmTyping(id){document.getElementById(id)?.remove()}
 </body>
 </html>`;
 }
+
