@@ -358,7 +358,6 @@ function getHTML() {
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>DevTemple AI Tutor</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -374,35 +373,34 @@ function getHTML() {
   --dim:#2a3650;
   --user-bg:#0f1f3d;
   --bot-bg:#0a1628;
-  --ff-display:'Syne',sans-serif;
-  --ff-body:'DM Sans',sans-serif;
 }
-html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--ff-body);font-size:15px}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:15px}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(37,99,235,0.08) 0%,transparent 60%);pointer-events:none}
 #app{position:relative;max-width:700px;margin:0 auto;height:100vh;display:flex;flex-direction:column;padding:18px 16px}
 header{display:flex;align-items:center;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--border);flex-shrink:0}
-.logo{width:40px;height:40px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--ff-display);font-weight:800;font-size:16px;color:#fff;flex-shrink:0;box-shadow:0 0 20px var(--accent-glow)}
-.htext h1{font-family:var(--ff-display);font-size:17px;font-weight:700;letter-spacing:-0.2px}
+.logo{width:40px;height:40px;border-radius:10px;background:var(--accent) url(https://devtem.org/assets/images/logo.png) no-repeat center;background-size:cover;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:transparent;flex-shrink:0;box-shadow:0 0 20px var(--accent-glow)}
+.htext h1{font-size:17px;font-weight:700;letter-spacing:-0.2px}
 .htext p{font-size:12px;color:var(--muted);font-weight:300}
-.badge{margin-left:auto;font-size:11px;color:var(--accent);background:var(--accent-light);border:1px solid rgba(37,99,235,0.3);padding:4px 10px;border-radius:20px;font-weight:500}
+.badge{margin-left:auto;font-size:11px;color:var(--accent);background:var(--accent-light);border:1px solid rgba(37,99,235,0.3);padding:4px 10px;border-radius:20px;font-weight:500;display:flex;align-items:center;gap:6px}
 #messages{flex:1;overflow-y:auto;padding:18px 2px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
 #messages::-webkit-scrollbar{width:3px}
 #messages::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
 .row{display:flex;gap:8px;animation:pop 0.28s cubic-bezier(.34,1.56,.64,1)}
 @keyframes pop{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:none}}
 .row.user{flex-direction:row-reverse}
-.av{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-family:var(--ff-display);flex-shrink:0;margin-top:2px}
-.av.b{background:var(--accent);color:#fff}
+.av{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px}
+.av.b{background:var(--accent) url(https://devtem.org/assets/images/logo.png) no-repeat center;background-size:cover;color:transparent;}
 .av.u{background:var(--user-bg);border:1px solid #1e3a6e;color:#7aabf0}
 .bubble{max-width:80%;padding:10px 14px;border-radius:14px;font-size:14px;line-height:1.65;white-space:pre-wrap;word-break:break-word}
 .bubble.bot{background:var(--bot-bg);border:1px solid var(--border);border-bottom-left-radius:3px;color:#c8d8f0}
 .bubble.user{background:var(--user-bg);border:1px solid #1a3a6e;border-bottom-right-radius:3px;color:#bdd4f5}
 .welcome{text-align:center;padding:48px 20px 20px;color:var(--muted)}
-.welcome .icon{font-size:36px;margin-bottom:14px}
-.welcome h2{font-family:var(--ff-display);font-size:20px;font-weight:700;color:var(--text);margin-bottom:8px;letter-spacing:-0.2px}
+.welcome .icon-svg{width:48px;height:48px;margin:0 auto 14px;display:flex;justify-content:center}
+.welcome .icon-svg svg{width:48px;height:48px;stroke:var(--accent);stroke-width:1.5;fill:none}
+.welcome h2{font-size:20px;font-weight:700;color:var(--text);margin-bottom:8px;letter-spacing:-0.2px}
 .welcome p{font-size:13.5px;font-weight:300;max-width:340px;margin:0 auto 20px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
-.chip{font-size:12px;padding:6px 12px;border-radius:20px;border:1px solid var(--border);color:var(--muted);background:var(--surface);cursor:pointer;transition:all .2s;font-family:var(--ff-body)}
+.chip{font-size:12px;padding:6px 12px;border-radius:20px;border:1px solid var(--border);color:var(--muted);background:var(--surface);cursor:pointer;transition:all .2s}
 .chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
 .typing-row{display:flex;gap:8px}
 .tdots{background:var(--bot-bg);border:1px solid var(--border);border-bottom-left-radius:3px;padding:12px 16px;border-radius:14px;display:flex;gap:4px;align-items:center}
@@ -412,7 +410,7 @@ header{display:flex;align-items:center;gap:12px;padding-bottom:16px;border-botto
 #input-area{padding-top:14px;border-top:1px solid var(--border);flex-shrink:0}
 .wrap{display:flex;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:7px 7px 7px 14px;transition:border-color .2s,box-shadow .2s}
 .wrap:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
-#inp{flex:1;background:transparent;border:none;outline:none;color:var(--text);font-family:var(--ff-body);font-size:14px;padding:5px 0;min-width:0}
+#inp{flex:1;background:transparent;border:none;outline:none;color:var(--text);font-family:inherit;font-size:14px;padding:5px 0;min-width:0}
 #inp::placeholder{color:var(--dim)}
 #btn{width:36px;height:36px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s,transform .15s,box-shadow .2s}
 #btn:hover{background:#1d4ed8;box-shadow:0 0 14px var(--accent-glow)}
@@ -432,26 +430,37 @@ header{display:flex;align-items:center;gap:12px;padding-bottom:16px;border-botto
       <h1>DevTemple AI Tutor</h1>
       <p>Answers from the official FAQ</p>
     </div>
-    <div class="badge">Online</div>
+    <div class="badge">
+      <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
+        <circle cx="5" cy="5" r="4" fill="#10b981"/>
+      </svg>
+      Online
+    </div>
   </header>
   <div id="messages">
     <div class="welcome" id="welcome">
-      <div class="icon">📚</div>
+      <div class="icon-svg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+          <path d="M8 12h8M12 8v8"/>
+          <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
       <h2>Ask me anything about DevTemple</h2>
       <p>I know the platform inside out — sellers, buyers, payments, Pro membership, referrals, and more.</p>
       <div class="chips">
-        <button class="chip" onclick="ask(this)">How do withdrawals work?</button>
-        <button class="chip" onclick="ask(this)">What is Premium Pro?</button>
-        <button class="chip" onclick="ask(this)">How do I become a seller?</button>
-        <button class="chip" onclick="ask(this)">What is the referral program?</button>
-        <button class="chip" onclick="ask(this)">How do I get verified?</button>
+        <button class="chip" data-question="How do withdrawals work?">💰 Withdrawals</button>
+        <button class="chip" data-question="What is Premium Pro?">⭐ Premium Pro</button>
+        <button class="chip" data-question="How do I become a seller?">📦 Become seller</button>
+        <button class="chip" data-question="What is the referral program?">🔗 Referral program</button>
+        <button class="chip" data-question="How do I get verified?">✅ Get verified</button>
       </div>
     </div>
   </div>
   <div id="input-area">
     <div class="wrap">
       <input id="inp" type="text" placeholder="Ask a question about DevTemple…" autocomplete="off"/>
-      <button id="btn" onclick="send()" aria-label="Send">
+      <button id="btn" aria-label="Send">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
         </svg>
@@ -468,7 +477,12 @@ let history=[];
 
 inp.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send()}});
 
-function ask(el){inp.value=el.textContent;send()}
+document.querySelectorAll('.chip').forEach(chip=>{
+  chip.addEventListener('click',()=>{
+    inp.value=chip.getAttribute('data-question')||chip.textContent.replace(/[⭐💰📦🔗✅]/g,'').trim();
+    send();
+  });
+});
 
 async function send(){
   const text=inp.value.trim();
